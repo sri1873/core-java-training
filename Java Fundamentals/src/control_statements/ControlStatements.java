@@ -8,7 +8,7 @@ public class ControlStatements {
 		Scanner scan = new Scanner(System.in);
 		int score = 0;
 		String answer = "";
-		System.out.println("1.Which is part of the Marvel Cinematic Universe?");
+		System.out.println("1.Which is part of the Marvel Universe?");
 		System.out.println("\ta) Green Lantern\n\tb) Deadpool\n\tc) Robin\n\td) Joker\n");
 		answer = scan.nextLine();
 		if (answer.equals("b")) {
@@ -20,7 +20,7 @@ public class ControlStatements {
 		}
 
 		System.out.println("2.Who is not an Avenger?");
-		System.out.println("\ta) Spiderman\n\tb) Black Widow\n\tc) Hulk\n\td) Thor\n");
+		System.out.println("\ta) Superman\n\tb) Black Widow\n\tc) Hulk\n\td) Thor\n");
 		answer = scan.nextLine();
 		if (answer.equals("a")) {
 			System.out.println("Correct!");
@@ -40,7 +40,7 @@ public class ControlStatements {
 			score--;
 		}
 
-		if (score > 13) {
+		if (score >= 10) {
 			System.out.println("Great job Your score is:" + score);
 		} else if (score > 7) {
 			System.out.println("Your score is:" + score);
