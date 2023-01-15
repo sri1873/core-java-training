@@ -1,6 +1,7 @@
 package abstraction;
 
-public class Calculator {
+public class Calculator extends Calculate {
+	public void calc();
 
 	public static void main(String[] args) {
 		Calculate ex1 = new Calculate(5, 5, '+');
