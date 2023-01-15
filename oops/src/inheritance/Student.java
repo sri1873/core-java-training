@@ -4,7 +4,7 @@ public class Student {
 	private String name;
 	private String UGID;
 	private String course;
-	String subject;
+	private String subject;
 
 	Student() {
 	}
@@ -15,8 +15,15 @@ public class Student {
 		this.course = course;
 	}
 
-	void Details() {
-		System.out.println(name + "|" + UGID + "|" + course + "|" + subject);
+	void setSubject(String sub) {
+		this.subject = sub;
+	}
+
+	String getSubject() {
+		return subject;
+	}
+	String getName() {
+		return name;
 	}
 }
 
@@ -25,15 +32,17 @@ class Subjects extends Student {
 		super(name, ugid, course);
 		switch (course) {
 		case ("CSE"):
-			super.subject = "Full-Stack Development";
+			super.setSubject("Full-Stack Development");
 			break;
 		case ("AI&DS"):
-			super.subject = "Big Data And Business Analytics";
+			super.setSubject("Big Data And Business Analytics");
 			break;
 		case ("AR"):
-			super.subject = "MicroProcessors";
+			super.setSubject("MicroProcessors");
 			break;
 		}
-		super.Details();
+		String sub = super.getSubject();
+		System.out.println(name+':'+sub);
+
 	}
 }

@@ -8,7 +8,6 @@ abstract class Calculate {
 	Calculate() {
 	}
 
-
 	abstract void calc(double num1, double num2, char operator);
 }
 
@@ -36,9 +35,7 @@ public class Calculator extends Calculate {
 		Calculator ex1 = new Calculator();
 		Calculator ex2 = new Calculator();
 		
-		ex1.calc(10,5,'+');
+		ex1.calc(10, 5, '+');
 		ex2.calc(23.3, 10, '-');
-
 	}
-
 }
