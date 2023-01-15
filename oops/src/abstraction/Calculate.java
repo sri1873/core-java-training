@@ -1,6 +1,6 @@
 package abstraction;
 
-public class Calculate {
+abstract class Calculate {
 	double num1;
 	double num2;
 	char operator;
@@ -15,7 +15,7 @@ public class Calculate {
 		calc();
 	}
 
-	private void calc() {
+	abstract calc() {
 		switch (operator) {
 		case '+':
 			System.out.println(num1 + num2);
