@@ -47,5 +47,6 @@ public class ControlStatements {
 		} else {
 			System.out.println("Your score is:" + score);
 		}
+		scan.close();
 	}
 }

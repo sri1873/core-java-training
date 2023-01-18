@@ -11,6 +11,7 @@ public class Functions {
 		String customerId = sc.nextLine();
 		BankAccount obj1 = new BankAccount(name, customerId);
 		obj1.menu();
+		sc.close();
 	}
 }
 
@@ -103,6 +104,7 @@ class BankAccount {
 		} while (option != 'e');
 
 		System.out.println("Thank you for using our banking services");
+		sc.close();
 	}
 
 }

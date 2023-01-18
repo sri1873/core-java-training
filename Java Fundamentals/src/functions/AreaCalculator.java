@@ -62,6 +62,8 @@ public class AreaCalculator {
 		System.out.println("Rectangle area: " + rectangle);
 		System.out.println("Triangle area: " + triangle);
 		System.out.println("Circle area: " + circle);
+		
+		
 
 	}
 }

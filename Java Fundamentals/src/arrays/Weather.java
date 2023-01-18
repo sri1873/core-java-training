@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
-
 public class Weather {
 	public static void main(String[] args) {
 

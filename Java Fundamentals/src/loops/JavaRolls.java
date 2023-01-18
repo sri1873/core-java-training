@@ -38,7 +38,7 @@ public class JavaRolls {
 			System.out.println("Wow, that's lucky. You win!");
 		else
 			System.out.println("Tough luck, you lose :(");
-
+		scan.close();
 	}
 
 	public static int rollDice() {
