@@ -1,7 +1,7 @@
 package abstraction;
 
 abstract class Calculate {
-	double num1;
+	double num4;
 	double num2;
 	char operator;
 
